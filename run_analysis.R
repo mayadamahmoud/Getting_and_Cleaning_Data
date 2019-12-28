@@ -4,8 +4,8 @@ sapply(packages, require, character.only=TRUE, quietly=TRUE)
 
 #Reading Data
 link <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(link, file.path(getwd(), "dataFiles.zip"))
-unzip(zipfile = "dataFiles.zip")
+download.file(link, file.path(getwd(), "dataFile.zip"))
+unzip(zipfile = "dataFile.zip")
 
 #Reading activityLabels and features
 activityLabels <- fread(file.path(getwd(), "UCI HAR Dataset/activity_labels.txt")
